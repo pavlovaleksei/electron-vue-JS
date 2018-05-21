@@ -19,7 +19,8 @@
   "dependencies": {
     "electron": "^1.8.2",
     "vue": "^2.5.13",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vue-web-cam": "^1.0.4"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

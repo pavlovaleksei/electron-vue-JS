@@ -5,6 +5,7 @@
 
 ```bash
 $ npm install
+$ npm install vue-web-cam --save
 $ npm run dev-server
 $ npm run dev
 ```
