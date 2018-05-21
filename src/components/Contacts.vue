@@ -1,11 +1,11 @@
 <template>
   <div class="contacts">
     <h1>Contacts <a v-if="action == 'list'" class="btn btn-primary" @click.prevent="changeAction('new')">Add New</a><a v-else class="btn btn-primary" @click.prevent="changeAction('list')">Show All</a></h1>
-
+    <div>
+      CRUD example
+    </div>
 
     <button @click="getInformationOS">Test message</button>
-
-    <h3><i>{{getInformationOS()}}</i></h3>
 
     <form v-if="action == 'new' || action == 'edit'" style="text-align: left;">
       <div class="form-group">
@@ -25,27 +25,6 @@
         <button v-else type="submit" class="btn btn-form btn-primary" @click.prevent="saveContact">Save</button>
       </div>
     </form>
-
-    <table>
-      <thead>
-      <tr>
-        <th>Name</th>
-        <th>Email</th>
-        <th>Phone</th>
-        <th>Actions</th>
-      </tr>
-      </thead>
-
-      <tbody>
-
-      <tr>
-        <td>{{name}}</td>
-        <td>{{email}}</td>
-        <td>{{phone}}</td>
-      </tr>
-
-      </tbody>
-    </table>
 
     <table class="table-striped" v-if="action == 'list'">
       <thead>
@@ -96,10 +75,6 @@
     methods: {
 
       getInformationOS() {
-        console.log(pc.networkInterfaces())
-        console.log(pc.userInfo())
-        console.log(pc.cpus())
-        console.log('btn clicked')
         new Notification('Title', {
           body: 'sad'
         })

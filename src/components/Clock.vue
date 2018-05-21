@@ -1,9 +1,8 @@
 <template>
   <div class="clock">
-    <h1>{{ time }}</h1>
+    System time: {{ time }}
   </div>
 </template>
-
 <script>
   export default {
     data () {
@@ -31,12 +30,11 @@
     }
   }
 </script>
-
 <style>
   .clock {
+    text-align: center;
     color: #C03763;
-    font-size: 48px;
+    font-size: 14px;
     line-height: 1.1em;
-    margin: 40px 0 60px;
   }
 </style>

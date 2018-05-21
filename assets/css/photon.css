@@ -525,6 +525,7 @@ h6 {
 }
 
 .toolbar-footer {
+  text-align: center;
   border-top: 1px solid #c2c0c2;
   -webkit-app-region: drag;
 }
