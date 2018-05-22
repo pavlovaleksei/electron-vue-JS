@@ -32,24 +32,37 @@
   </head>
   <body>
     <div id="app">
-      <div class="window">
-        <div class="window-content">
-          <div class="pane-group">
-            <div class="pane-sm sidebar">
-              <nav class="nav-group">
-                <h5 class="nav-group-title">Menu</h5>
-                <router-link class="nav-group-item" to="/"><span class="icon icon-tools"></span> Pc config</router-link>
-                <router-link class="nav-group-item" to="/contacts"><span class="icon icon-users"></span> Contacts (CRUD)</router-link>
-                <router-link class="nav-group-item" to="/music"><span class="icon icon-folder"></span> File system</router-link>
+      <div>
+        <!--<div class="window-content">-->
+          <!--<div class="pane-group">-->
+            <!--<div class="pane-sm sidebar">-->
+              <!--<nav class="nav-group">-->
+                <!--<h5 class="nav-group-title">Menu</h5>-->
+                <!--<router-link class="nav-group-item" to="/"><span class="icon icon-tools"></span> Pc config</router-link>-->
+                <!--<router-link class="nav-group-item" to="/contacts"><span class="icon icon-users"></span> Contacts (CRUD)</router-link>-->
+                <!--<router-link class="nav-group-item" to="/music"><span class="icon icon-folder"></span> File system</router-link>-->
+              <!--</nav>-->
+            <!--</div>-->
+
+            <div>
+              <nav class="menu">
+                <router-link class="menu__item" to="/"><span class="icon icon-tools"></span> Pc config</router-link> |
+                <router-link class="menu__item" to="/contacts"><span class="icon icon-users"></span> Contacts (CRUD)</router-link> |
+                <router-link class="menu__item" to="/music"><span class="icon icon-folder"></span> File system</router-link>
               </nav>
             </div>
-            <div class="pane container" style="padding: 10px;">
+
+            <div>
               <router-view></router-view>
             </div>
-          </div>
-        </div>
-        <footer class="toolbar toolbar-footer">
-          <i>Dev by Pavlov Aleksey</i>
+
+            <!--<div class="pane container" style="padding: 10px;">-->
+              <!--<router-view></router-view>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
+        <footer class="footer">
+          <div style="text-align: center; color: white"><i>Dev by Pavlov Aleksey</i></div>
         </footer>
       </div>
     </div>

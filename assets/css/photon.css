@@ -187,6 +187,45 @@ h6 {
   font-size: 12px;
 }
 
+.footer {
+  position: fixed;
+  left: 0; bottom: 0;
+  padding: 2px;
+  background: #FF4444;
+  color: #fff;
+  width: 100%;
+}
+
+.win {
+  background: gray;
+}
+
+.menu {
+  background:#FF4444;
+  color: white;
+  text-decoration: white;
+  padding: 5px;
+  font-size: 15px;
+  text-align: center;
+  line-height:50px;
+  display: block;
+  border-right: 1px solid #F36262;
+  -moz-transition: all 0.3s 0.01s ease;
+  -o-transition: all 0.3s 0.01s ease;
+  -webkit-transition: all 0.3s 0.01s ease;
+}
+
+.menu__item {
+  color: white;
+  font-size: 15px;
+}
+
+.menu__item:hover {
+  background: #D43737;
+  padding: 20px;
+
+}
+
 .window {
   position: absolute;
   top: 0;
